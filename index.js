@@ -101,9 +101,9 @@ export const registerApp = wrapRegisterApp(WeChat.registerApp);
  * @param {String} appdesc - the app description
  * @return {Promise}
  */
-export const registerAppWithDescription = wrapRegisterApp(
-  WeChat.registerAppWithDescription,
-);
+// export const registerAppWithDescription = wrapRegisterApp(
+//   WeChat.registerAppWithDescription,
+// );
 
 /**
  * Return if the wechat app is installed in the device.
