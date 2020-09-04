@@ -45,5 +45,15 @@ sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
   return [RCTLinkingManager application:application openURL:url options:options];
 }
 
+// Universal Links
+- (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity
+ restorationHandler:(void (^)(NSArray<id<UIUserActivityRestoring>> * _Nullable))restorationHandler
+{
+  return [RCTLinkingManager
+            application:application
+            continueUserActivity:userActivity
+            restorationHandler:restorationHandler
+         ];
+}
 
 ```
